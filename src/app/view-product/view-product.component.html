@@ -1,0 +1,30 @@
+<app-navbar></app-navbar>
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row g-3 mt-4">
+                <div class="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3" *ngFor="let i of products">
+                    <div class="card" style="width: 18rem;">
+                        <img height="200px" src="https://watermatics.in/uploads/product.png" class="card-img-top" alt="...">
+                        <div style="height: 60px;overflow-y: hidden;" class="card-body">
+                          <h5 class="card-title">{{i.productName}}</h5>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Code: {{i.productCode}}</li>
+                          <li class="list-group-item">Price: {{i.price}}</li>
+                          <li class="list-group-item">Brand: {{i.brand}}</li>
+                          <li class="list-group-item">Manu. Date: {{i.manufacturingDate}}</li>
+                          <li class="list-group-item">Exp. Date: {{i.expiryDate}}</li>
+                          <li class="list-group-item">Price: {{i.price}}</li>
+                          <li class="list-group-item">Seller Name: {{i.sellerName}}</li>
+                          <li class="list-group-item">Distributor Name: {{i.distributorName}}</li>
+                        </ul>
+                        <div class="card-body">
+                          <a href="#" class="btn btn-primary">Buy Now</a>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
