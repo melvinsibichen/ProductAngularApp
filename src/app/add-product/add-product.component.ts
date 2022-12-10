@@ -32,6 +32,7 @@ export class AddProductComponent {
     }
     this.api.sendData(product).subscribe(
       (response) => {
+        console.log(response)
 
       }
     )
